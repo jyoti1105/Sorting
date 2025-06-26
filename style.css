@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  :root {
+    --bg: #f4f6f8;
+    --text: #222;
+    --bar: #3498db;
+    --active: #e74c3c;
+    --sorted: #2ecc71;
+  }
+  
+  body.dark {
+    --bg: #1e1e1e;
+    --text: #f4f4f4;
+    --bar: #74b9ff;
+    --active: #ff7675;
+    --sorted: #55efc4;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  .controls {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .controls label, .controls button {
+    font-size: 16px;
+  }
+  
+  #stats {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  #array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 400px;
+    margin: 30px auto;
+    width: 90%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 10px;
+  }
+  
+  .bar {
+    background-color: var(--bar);
+    margin: 1px;
+    width: 5px;
+    transition: height 0.2s ease;
+  }
+  
+  .bar.active {
+    background-color: var(--active);
+  }
+  
+  .bar.sorted {
+    background-color: var(--sorted);
+  }
+  
+  footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: var(--text);
+  }
+  
